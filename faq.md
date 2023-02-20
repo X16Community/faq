@@ -8,10 +8,10 @@ The Commander X16 is The 8-Bit Guy’s dream computer, designed to evoke the sam
 
 The X16 will be made entirely with parts that are still readily available today, ensuring perpetual availability without reliability issues, but in keeping with David's vision, it will house a real CPU rather than using emulation or an FPGA recreation of a processor. Running Commodore BASIC V2 (with some additions), the X16 will be inexpensive enough to allow a critical mass of users to create an expansive software ecosystem, but simple enough that a single person can understand all of the chips and components that allow that software to run.
 
-Three models, or "Generations" of the computer are planned under the "Commander X16" brand umbrella: 
+Three models, or "Generations" of the computer are planned under the "Commander X16" brand umbrella. All of the models will run the same software and will feature full support for keyboard, mouse, and game controllers. 
 
-* **Gen-1**: This is the Developer Edition, with 4 expansion slots, giving you flexibility for hardware and software development. 
-* **Gen-2**: This is unapogetically a game console. It will feature cartridge support and a stylish case that calls back to the fun and functional designs of 80s game consoles. It will also feature integrated network support, with access to the Commander X16 BBS.
+* **Gen-1**: This is the Developer Edition, with 4 expansion slots, giving you flexibility for hardware and software development. (A network card will be available to match the networking capabilities of G2 and G3 systems.)
+* **Gen-2**: Is it a computer or a game console? Yes. Featuring cartridge support and a stylish case, it is a fully featured X16 computer - with a bonus! Integrated WiFi will connect to the Commander X16 BBS and offer a variety of games, applications, and development tools. 
 * **Gen-3**: The "Elite" model will feature a fully integrated single-chip design. The goal of the Gen-3 product is portability and price, potentially targeting classrooms and students. With a target price of $100, this will be a computer anyone can afford, and with access to the Commander X16 BBS, students will be able to download and share their works with other students around the world.
 
 ## Who is The 8-Bit Guy
