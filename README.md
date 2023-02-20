@@ -1,2 +1,3 @@
-# pages
-Static pages and FAQ for Commander X16 Forum and web site
+# Commander X16
+
+Please see the FAQ for more information.
