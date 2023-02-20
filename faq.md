@@ -1,4 +1,3 @@
-![About Commander X16](about.png)
 <p align="center"><img src="about.png" /></p>
 
 
