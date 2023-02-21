@@ -89,78 +89,127 @@ This entire computer is meant to be a close relative of the Commodore systems. W
 
 XXX
 
-What about other languages?
-There’s no reason you couldn’t program in C++ or whatever on this computer if somebody wants to port over a compiler. Alternatively, you can use a cross-compiler like cc65.
-Will it be compatible with Commodore 64 software?
-Although it runs Commodore BASIC (itself based on Microsoft BASIC as many machines were) it was never intended to be an "emulator" or compatible with the C64 or any other machine. It is its own machine, just as the ZX Spectrum, Atari 800, etc. were also distinct from the C64. There are also already several existing options for users looking for a C64 compatible machine with no need to add to that growing/crowded market. While it might be nice, it would make this project considerably more complicated, expensive, and most likely it would never get finished. Ultimately C64 compatibility is not the aim of this product. However, most C64 and other 8-Bit games should be easy to port to the X16 ecosystem if desired.
-Why the name "X16"?
-"Commander 16" would be abbreviated to "C16" and too easily confused with the Commodore "C16", so when Perifractic proposed the always cool "X" be added to make "X16" it got the team's vote. As for "16" the original design was to use an 816 processor, however the machine still has a 16-bit address space. But above all, the X16 is an 8-bit machine with 16-bit tendencies. Commander X16!
+## What about other languages?
 
-Why VGA instead of Composite or HDMI?
-VGA is fairly easy to implement as compared to HDMI. And worst case, there are low-cost chips that can convert VGA to HDMI. And if you have to convert to HDMI, far better to convert from VGA than from composite.
-What sort of expansions would be possible?
-There will be up to 4 expansion slots that could be used for just about anything. One drawback of running at 8 MHz will be that many chips like SID chips will not run that fast, so additional logic would have to be implemented on the card in order to communicate with the chip.
-What sort of joysticks will you use and why?
-SNES style game controllers. There are a few reasons for this:
-The controllers, or at least clones are still manufactured.
-They offer more buttons, allowing more complex games for the X16 than the Atari 9-pin standard which only supports one fire button.
-They require fewer I/O lines to operate them.
-Joysticks have sort of fallen out of favor and most people these days prefer gamepad style controllers.
-Will a floppy or CD-ROM drive be included?
-Whilst they are not included, Phase 1 at the least does include an IEC compatible Commodore-style floppy disk drive port for those who wish to use it. A drive is not included as both technologies are largely obsolete. The X16 will use standard SD Cards, with a slot located at the back of the machine (because most people when polled stated they rarely switch out the card once inserted.) Part of David's vision is that the X16 is made with still-available parts, and this extends to the storage media availability. Floppy disks are rarely if at all made any more. We do understand the nostalgic importance of those media, however they can still be enjoyed with 80s hardware or our IEC port.
+Compilers are available for several programming languages: at least two different C compilers support the X16 as a compiler target, with appropriate runtimes. We also have a FORTH compiler in progress, plus a new programming language named Prog8. You can also use a dialect of BASIC called XC=BASIC. Of course, 65C02 assembly language is also an option, and all of the popular 6502 assemblers can output object code that works on the X16. 
 
-What do you need help with the most?
+## Will it be compatible with Commodore 64 software?
+
+No, this is not an emulation of any prior computer. The X16 is a unique product with its own memory layout and devices. It can run simple BASIC programs written for BASIC 2, and it can even run machine language programs that strictly use KERNAL calls for input and output. It will not, however, run Commodore games without re-writing the graphics, keyboard, joystick, and storage routines for this platform. 
+
+## Can this emulate <some other computer>?
+
+No. The 6502 does not have the necessary hardware for realtime emulation of other system architectures. Attempting to emulate any other computer in real time is going to be virtually impossible. Again, some things can be simulated at a superficial level, but full emulation that can run arbitrary machine code from another platform is unlikely.
+
+## Why the name "X16"?
+Commodore already has a "C16" computer: the Commodore 16. Obviously, we don't want people confusing "C16" and "C16". So the "X" was added to differentiate our computer. Perifractic proposed the always cool "X" be added to make "X16", and this got the team's vote. 
+
+The "16" part comes from the intention to use a 65C816 processor. While that plan was scrapped, due to the need for additional hardware to demux the address and data lines, the name has not changed. 
+
+## Why VGA instead of Composite or HDMI?
+
+Licensing. While it's fairly simple to implement an HDMI device, we would have to pay license fees to build an actual HDMI output. Also, VGA is fairly easy to implement, and VGA to HDMI converters are fairly inexpensive. We will have specific models of tested and supported converters in the future. 
+
+## What sort of expansions would be possible?
+
+There will be up to 4 expansion slots, and some of the unused VIA pins may be available on the rear panel. Expansion slots will have the full address and data bus, plus up to 5 shared CS lines. Using a jumper or DIP switch on the expansion card, a user should be able to map an expansion card to any of the 5 address ranges available for I/O. Cards can also access the address range used by the ROM and RAM banks, allowing for additional memory expansion, game cartridges, or high speed storage interfaces. 
+
+## What sort of joysticks will you use and why?
+
+SNES style game controllers. The SNES interface uses fewer wires and allows for more buttons on each pad. Also, joysticks have sort of fallen out of favor and people prefer gamepad controllers. 
+
+## Will a floppy or CD-ROM drive be included?
+
+The system will store data on SDHC or SDXC memory cards. (The older SD cards with less than 2GB may not be supported.) 
+
+In addition, the Gen-1 system will include a Commodore compatible IEC port, to allow reading from a user-supplied Commodore 1541, 1571, or 1581 diskette drive. Floppy drives are no longer being manufactured, so there are no plans to include a floppy diskette or optical disk drive. 
+
+
+** What do you need help with the most?
+
 At the moment we need software development. The emulator is now available and people can start writing their own code. You can upload your creations to the software library at this website.
-Will it be available as a kit/pre-assembled/motherboard only?
+
+** Will it be available as a kit/pre-assembled/motherboard only?
+
 We haven't decided for certain. The problem with selling it as a kit is that the design team will not have time for being end-user tech support. So, while the kit may end up being cheaper, it will also be sold without official technical support - although this website has been set up so people can still obtain support from the community and/or developers. If people assemble it and it doesn’t work, they can ask for support there. We will update the FAQ once a decision has been reached about whether to provide a kit option. As for a motherboard only option, our focus now is on releasing the computer. Once the project is launched and established, we will revisit these kind of options.
-Will a keyboard be included?
-Perifractic (who also designed this website) designed a bespoke PETSCII mini keyboard that will be included with all X16 orders. The prototype is now in hand and the deposit for the first 1000 units has been paid.
-By popular demand from keyboard connoisseurs there is also a premium microswitch keyboard option available from WASD available now and compatible with the emulator and X16 itself.
-Why PS/2 Keyboard and not USB?
+
+** Will a keyboard be included?
+
+Yes. A custom Perixx keyboard has been designed by Perifractic. Based on the [PERIBOARD-407 B](https://perixx.com/collections/keyboards/products/wired-mini-tkl-sturdy-keyboard-multimedia-keys-embedded-numpad). The keyboard will resemble the late model Commodore 64C keyboard, WITH PETSCII glyphs, and a white case. You can also order a [custom WASD keyboard](https://www.wasdkeyboards.com/commander16-by-the-8-bit-guy.html) with compatible PS/2 firmware and PETSCII keycaps. [PETSCII Keycaps](https://www.wasdkeyboards.com/commander16-by-the-8-bit-guy-87-key-custom-cherry-mx-keycap-set.html) are also available separately.
+
+## Why PS/2 Keyboard and not USB?
+
 USB is tremendously more difficult to implement than PS/2. A good analogy is like the difference between implementing RS-232 or Ethernet. PS/2 keyboards (and mice) are still manufactured, easy to find, and inexpensive. And, since the kernel is going to handle keyboard input, there’s no reason we can’t upgrade to USB later when we have the resources for that - and it shouldn’t break compatibility.
-Will a case be included?
-Updated answer here written by Perifractic: 
-Why is the keyboard separate not integrated into a case like a C64?
-There are a few reasons:
 
-The Phase 1 motherboard is likely too large to fit inside a keyboard-case, and doing so would also rule out having full height internal expansion cards like an Apple 2.
+## Will a case be included?
 
-We have heard comments like "retro computers are all-in-one with integrated keyboard!"... then again there was the Amiga 1000, A2000, A2500, A3000, A4000, Apple Macintosh, Apple III, Apple IIGS, Commodore 128D, Amstrad PCW, Amstrad PC1512, Amstrad PC1640, Acorn Archimedes, Sony MSX, Atari Mega ST, Atari TT030, Coleco Adam, & many more beautiful retro machines with separate keyboards.
-We and many users believe that the flexibility of being able to position the main computer away from the keyboard on your desk, without multiple wires trailing across the desk between, is actually a functional bonus and why Apple went this route with the Macintosh, with the others following suit.
-We also aren't going with 3D printing due to speed, cost, & quality concerns. The technology just isn’t ready yet.
-What about expansion cards for each phase?
-Phase 1: 4 expansion card slots
-Phase 2: Undecided but there may be 1 or more slots inside that can use a 90-degree riser to still allow a card to be inserted in the lower case. Another option may be an external expansion card slot that can take a 4-in-1 adapter (similar to those C64 cartridge port expanders).
-Phase 3: No expansion slots but expansion options are yet to be determined.
-Why isn't a monitor included?
-Many enthusiasts already have a compatible monitor (see specs at top) however they do not already have an X16! The goal is to deliver the most affordable package to get people up and running. Plenty of third party options are available. We have not ruled out providing a monitor in the future.
-How about a mouse?
-Whilst there is a dedicated PS/2 mouse port at the back, we haven't decided if a mouse will be included as standard. It would increase the cost and some users may not need one. It may be an option at the store.
-Will it be available in the USA, Europe, & beyond?
-We hope to offer international shipping from the USA.
-Will user guides be included?
+A case design is in progess. At this point, we believe the case will be an optional feature. 
+
+## Why not a wedge case?
+
+The case resembles a slim line, ATX PC case. It does not include a built-in keyboard for cost reasons.
+
+Not all retro comptuers used wedge cases. Consider the Amiga 1000, A2000, A2500, A3000, A4000, Apple Macintosh, Apple III, Apple IIGS, Commodore 128D, Amstrad PCW, Amstrad PC1512, Amstrad PC1640, Acorn Archimedes, Sony MSX, Atari Mega ST, Atari TT030, Coleco Adam, Kaypro series, and many more beautiful retro machines with separate keyboards.
+
+## What about expansion cards for each generation? 
+
+Gen 1: 4 expansion card slots. One slot will have the ROM bank lines and be "BONK" (RAM in ROM Bank) compatible. 
+Gen 2: Cartridge slot and all other external ports. The cartridge slot should be identical to slot 1 in the Gen-1 board. 
+Gen 3: TBD, but "probably not."
+
+## Why isn't a monitor included?
+
+Cost. If you don't have a spare monitor, you can pick one up for less money than it would cost for us to acquire and ship to you. Also, most enthusiasts already have a compatible monitor that can handle VGA graphics. 
+
+## How about a mouse?
+
+A PS/2 mouse is expected to be included. 
+
+## Will it be available in the USA, Europe, & beyond?
+
+We hope to offer international shipping from the USA. Note that the official keyboard will use the US ANSI layout, but it will be compatible with several languages and layouts. 
+
+## Will user guides be included?
 Perifractic designed a nostalgic traditional spiral bound Getting Started guide with an awesome (top secret) cover co-created by him and Trevor Storey. The manual includes a BASIC programming guide. The rest of the team are currently finishing up the finer details of the manual. Further docs are already available in the Downloads section of this website. The working title for the spiral bound guide is “Just the BASICs: Getting started with the Commander X16”. There will also be “Assembling Assembly” and a programmer’s reference guide. PDFs will likely be an option.
-Why not use the Parallax Propeller chip?
+
+## Why not use the Parallax Propeller chip, FPGA, Arduino, Teensy, Pi Pico, etc?
+
 We will not be using the Propeller for these reasons:
 Most of its capabilities are on par with or inferior to our custom FPGA.
 There are issues when putting it on the system bus related to CPU read attempt speed call and answer
 The Propeller costs the same as if not more than the faster FPGA
-Will there be a GUI?
-We are exploring this option. An ideal GUI might use a text character set, rather than graphics - see http://www.c64os.com/c64os as a reference. The emulator also already incorporates GEOS. Type "GEOS" to get started, although it is still in beta and you will need a GEOS disk image file to get started.
-Is there an emulator?
+
+## Will there be a GUI?
+
+There is no official GUI planned. Support routines for GEOS are present in ROM, but at this point, no one has a working GEOS desktop or application suite. 
+
+## Is there an emulator?
 Yes, you can download it from via the Downloads section of this site or try the web-based emulator from the home page!
-Is there a software library webpage?
-Yes, just click Downloads above to get started!
-What is the correct short-name for the Commander X16?
-We just call it the "X16".
-Will the X16 become open source?
-At some point, most likely yes. However we have to consider that part of the code that makes the whole system work is owned by other rights holders who inherited it from Commodore/Microsoft and whom we have licensed it from (only some parts of the emulator are covered by the BSD-2 Clause License, not all parts). Before making the entire X16 open source or allowing custom machine builds based around our code, we will need to get the necessary additional permissions or work out a way that is acceptable to all parties. This will happen some time after the machine's physical releases. Until then, we cannot encourage clone machines based on the X16 code as it may jeopardize the license relationships we worked hard to forge. Thanks for your understanding.
-Will there be a beta programme?
-Currently the plan is to beta test among a pre-selected core group. In order to reduce the number of emails/messages the team receives from people asking to be part of this - which we understand and appreciate - it is important to state that the beta will initially be closed/invite only. It is expected that almost all testers selected will be the most active developers in the X16 community/software library up until now, and hardware specialists who have assisted with the project thus far. If there is a later beta that is more open it will be announced at such time. Please kindly do not request updates or to put your name forward. Thank you.
-Is this a commercial or not-for-profit venture?
+
+## Is there a software library webpage?
+Yes, just click [here](https://cx16forum.com) to get started! 
+
+## What is the correct short-name for the Commander X16?
+
+X16 or CX16 are both accepted. "CX16" is short for "Commander X16", in the same way C64 is short for "Commodore 64." But just like people said, "I have a 64", you can say "I have an X16," and we'll know what you mean.
+
+## Will the X16 become open source?
+
+There are no immediate plans to open source the computer. 
+
+The KERNAL code is not available as open source, nor will it be, due to licensing issues. Commodore's KERNAL is owned by Cloanto corp, and this is not likely to change. So *you may not use the Commander X16 ROM without purchasing a Commander X16 Microcomputer.*
+
+There are discussions of creating a fully open-source KERNAL for the Gen-2 gaming system. This discussion is ongoing, and we will update this FAQ if this changes. 
+
+## Will there be a beta program? 
+
+As of February 2023, The first 100 developer systems (aka Gen-1) are being assembled. These users will be the core beta test group. 
+
+## Is this a commercial or not-for-profit venture?
 The Commander X16 has been developed by a team of enthusiasts who shared David's vision to create a reliable, low cost, modern retro computer for the benefit of the retro community. The team is committed to launching the Commander X16 at the lowest price possible while still ensuring that the team will be reimbursed for out of pocket expenses incurred during the 2+ year development process (such as parts, prototypes, shipping, web hosting, etc.) David and the team are not looking to profit from the project and instead seek to strike a balance between continuing to produce the Commander X16 at an affordable price while also meeting the ongoing costs associated with continued development, manufacture, and infrastructure (e.g., website hosting, legal assistance, prototyping, deposits on parts, and so on).
 
-Who's been bringing the project to life?
+## Who's been bringing the project to life?
+
 The team has included at various points:
 David Murray aka The 8-Bit Guy - Ringleader and software development
 Kevin Williams aka TexElec - Board design/Prototyping/Manufacturing
@@ -168,3 +217,5 @@ Christian Simpson aka Perifractic - Visual design, Branding, Website creation
 Michael Steil - ROM (KERNAL, BASIC) and Emulator
 Frank van den Hoef - VERA Video chip design
 Michael Allison - Assembler environment
+
+Credit must also be given to our excellent Discord and forum community, who have been testing, developing, and sharing software for the X16. Without their contributions, the computer would never have made it to production.
