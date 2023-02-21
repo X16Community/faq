@@ -124,16 +124,21 @@ The system will store data on SDHC or SDXC memory cards. (The older SD cards wit
 
 In addition, the Gen-1 system will include a Commodore compatible IEC port, to allow reading from a user-supplied Commodore 1541, 1571, or 1581 diskette drive. Floppy drives are no longer being manufactured, so there are no plans to include a floppy diskette or optical disk drive. 
 
+## Will it support cassette drives?
 
-** What do you need help with the most?
+Official cassette drive support is not planned, and the KERNAL ROM does not support reading from or writing to tape.
+	
+If you want to run a Commodore BASIC program you have saved on tape, you can use a Commodore computer to copy the program to diskette, or you can convert the cassette to TAP format on a PC, using various conversion tools (we can help you on the forums.)
+
+## What do you need help with the most?
 
 At the moment we need software development. The emulator is now available and people can start writing their own code. You can upload your creations to the software library at this website.
 
-** Will it be available as a kit/pre-assembled/motherboard only?
+## Will it be available as a kit/pre-assembled/motherboard only?
 
 We haven't decided for certain. The problem with selling it as a kit is that the design team will not have time for being end-user tech support. So, while the kit may end up being cheaper, it will also be sold without official technical support - although this website has been set up so people can still obtain support from the community and/or developers. If people assemble it and it doesn’t work, they can ask for support there. We will update the FAQ once a decision has been reached about whether to provide a kit option. As for a motherboard only option, our focus now is on releasing the computer. Once the project is launched and established, we will revisit these kind of options.
 
-** Will a keyboard be included?
+## Will a keyboard be included?
 
 Yes. A custom Perixx keyboard has been designed by Perifractic. Based on the [PERIBOARD-407 B](https://perixx.com/collections/keyboards/products/wired-mini-tkl-sturdy-keyboard-multimedia-keys-embedded-numpad). The keyboard will resemble the late model Commodore 64C keyboard, WITH PETSCII glyphs, and a white case. You can also order a [custom WASD keyboard](https://www.wasdkeyboards.com/commander16-by-the-8-bit-guy.html) with compatible PS/2 firmware and PETSCII keycaps. [PETSCII Keycaps](https://www.wasdkeyboards.com/commander16-by-the-8-bit-guy-87-key-custom-cherry-mx-keycap-set.html) are also available separately.
 
