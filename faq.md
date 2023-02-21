@@ -87,8 +87,6 @@ reduced proce and the Educator system for less than $100.
 
 This entire computer is meant to be a close relative of the Commodore systems. While technically Commodore BASIC is actually Microsoft BASIC, David wants it to be as similar as possible to programming on a VIC-20, C64, or Plus/4. It will run BASIC v2 with some additions. We have reached agreement with the rights holder to license it for this purpose.
 
-XXX
-
 ## What about other languages?
 
 Compilers are available for several programming languages: at least two different C compilers support the X16 as a compiler target, with appropriate runtimes. We also have a FORTH compiler in progress, plus a new programming language named Prog8. You can also use a dialect of BASIC called XC=BASIC. Of course, 65C02 assembly language is also an option, and all of the popular 6502 assemblers can output object code that works on the X16. 
