@@ -14,6 +14,8 @@ Three models, or "Generations" of the computer are planned under the "Commander 
 * **Gen-2**: Is it a computer or a game console? Yes. Featuring cartridge support and a stylish case, it is a fully featured X16 computer - with a bonus! Integrated WiFi will connect to the Commander X16 BBS and offer a variety of games, applications, and development tools. 
 * **Gen-3**: The "Elite" model will feature a fully integrated single-chip design. The goal of the Gen-3 product is portability and price, potentially targeting classrooms and students. With a target price of $100, this will be a computer anyone can afford, and with access to the Commander X16 BBS, students will be able to download and share their works with other students around the world.
 
+Please watch [Commander X16 video playlist](https://www.youtube.com/playlist?list=PLfABUWdDse7bKGFshxR0itdHBhjUj86SX) for more details.
+
 ## Who is The 8-Bit Guy
 
 David Murray, AKA "The 8-Bit Guy" runs a successful YouTube channel centered on vintage computing. He also dabbles in music, electric car culture, off-grid energy production, computer refurbishment and resale. 
@@ -21,6 +23,7 @@ David Murray, AKA "The 8-Bit Guy" runs a successful YouTube channel centered on 
 His web site is [https://www.the8bitguy.com/](https://www.the8bitguy.com/)
 
 ## Specifications
+
 Commander X16P Features & Specifications (subject to change)
 
 * CPU
@@ -42,7 +45,7 @@ Commander X16P Features & Specifications (subject to change)
   * Standard Commodore Kernal
   * CMDR-BASIC
     * Microsoft BASIC 2.0 (Complete, identical to Commodore 64 and VIC-20)
-	* Commander X16 extentions
+    * Commander X16 extentions
   * Machine Language Monitor (Supermon and CODEX)
   * ROM can be flashed in place. 
 * Expansion
@@ -80,8 +83,7 @@ The first batch of dev boards have been received by David. The team is currently
 
 ## How much will it cost?
 
-Pricing has not been announced yet. Expect roughly $400 for the Pro system. We hope to release the Consoles system at a
-reduced proce and the Educator system for less than $100. 
+Pricing has not been announced yet. Expect roughly $400 for the Pro system. We hope to release the Consoles system at a reduced proce and the Educator system for less than $100. 
 
 ## Why Commodore BASIC?
 
@@ -100,6 +102,7 @@ No, this is not an emulation of any prior computer. The X16 is a unique product 
 No. The 6502 does not have the necessary hardware for realtime emulation of other system architectures. Attempting to emulate any other computer in real time is going to be virtually impossible. Again, some things can be simulated at a superficial level, but full emulation that can run arbitrary machine code from another platform is unlikely.
 
 ## Why the name "X16"?
+
 Commodore already has a "C16" computer: the Commodore 16. Obviously, we don't want people confusing "C16" and "C16". So the "X" was added to differentiate our computer. Perifractic proposed the always cool "X" be added to make "X16", and this got the team's vote. 
 
 The "16" part comes from the intention to use a 65C816 processor. While that plan was scrapped, due to the need for additional hardware to demux the address and data lines, the name has not changed. 
@@ -125,7 +128,7 @@ In addition, the Gen-1 system will include a Commodore compatible IEC port, to a
 ## Will it support cassette drives?
 
 Official cassette drive support is not planned, and the KERNAL ROM does not support reading from or writing to tape.
-	
+
 If you want to run a Commodore BASIC program you have saved on tape, you can use a Commodore computer to copy the program to diskette, or you can convert the cassette to TAP format on a PC, using various conversion tools (we can help you on the forums.)
 
 ## What do you need help with the most?
@@ -156,9 +159,9 @@ Not all retro comptuers used wedge cases. Consider the Amiga 1000, A2000, A2500,
 
 ## What about expansion cards for each generation? 
 
-Gen 1: 4 expansion card slots. One slot will have the ROM bank lines and be "BONK" (RAM in ROM Bank) compatible. 
-Gen 2: Cartridge slot and all other external ports. The cartridge slot should be identical to slot 1 in the Gen-1 board. 
-Gen 3: TBD, but "probably not."
+* Gen 1: 4 expansion card slots. One slot will have the ROM bank lines and be "BONK" (RAM in ROM Bank) compatible. 
+* Gen 2: Cartridge slot and all other external ports. The cartridge slot should be identical to slot 1 in the Gen-1 board. 
+* Gen 3: TBD, but "probably not."
 
 ## Why isn't a monitor included?
 
@@ -173,6 +176,7 @@ A PS/2 mouse is expected to be included.
 We hope to offer international shipping from the USA. Note that the official keyboard will use the US ANSI layout, but it will be compatible with several languages and layouts. 
 
 ## Will user guides be included?
+
 Perifractic designed a nostalgic traditional spiral bound Getting Started guide with an awesome (top secret) cover co-created by him and Trevor Storey. The manual includes a BASIC programming guide. The rest of the team are currently finishing up the finer details of the manual. Further docs are already available in the Downloads section of this website. The working title for the spiral bound guide is “Just the BASICs: Getting started with the Commander X16”. There will also be “Assembling Assembly” and a programmer’s reference guide. PDFs will likely be an option.
 
 ## Why not use the Parallax Propeller chip, FPGA, Arduino, Teensy, Pi Pico, etc?
@@ -187,10 +191,12 @@ The Propeller costs the same as if not more than the faster FPGA
 There is no official GUI planned. Support routines for GEOS are present in ROM, but at this point, no one has a working GEOS desktop or application suite. 
 
 ## Is there an emulator?
-Yes, you can download it from via the Downloads section of this site or try the web-based emulator from the home page!
+
+Yes, you can download it from via the [Official Software](https://cx16forum.com/forum/viewforum.php?f=30) section of this site or try the web-based emulator from the home page!
 
 ## Is there a software library webpage?
-Yes, just click [here](https://cx16forum.com) to get started! 
+
+Yes, just click [here](https://cx16forum.com/forum/viewforum.php?f=29) to get started! 
 
 ## What is the correct short-name for the Commander X16?
 
@@ -209,6 +215,7 @@ There are discussions of creating a fully open-source KERNAL for the Gen-2 gamin
 As of February 2023, The first 100 developer systems (aka Gen-1) are being assembled. These users will be the core beta test group. 
 
 ## Is this a commercial or not-for-profit venture?
+
 The Commander X16 has been developed by a team of enthusiasts who shared David's vision to create a reliable, low cost, modern retro computer for the benefit of the retro community. The team is committed to launching the Commander X16 at the lowest price possible while still ensuring that the team will be reimbursed for out of pocket expenses incurred during the 2+ year development process (such as parts, prototypes, shipping, web hosting, etc.) David and the team are not looking to profit from the project and instead seek to strike a balance between continuing to produce the Commander X16 at an affordable price while also meeting the ongoing costs associated with continued development, manufacture, and infrastructure (e.g., website hosting, legal assistance, prototyping, deposits on parts, and so on).
 
 ## Who's been bringing the project to life?
