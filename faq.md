@@ -192,7 +192,7 @@ There is no official GUI planned. Support routines for GEOS are present in ROM, 
 
 ## Is there an emulator?
 
-Yes, you can download it from via the [Official Software](https://cx16forum.com/forum/viewforum.php?f=30) section of this site or try the web-based emulator from the home page!
+Yes, you can download it from via the [Official Software](https://cx16forum.com/forum/viewforum.php?f=30) section of this site or try the [web-based emulator](https://www.cx16forum.com/webemu/x16emu.html) from the home page!
 
 ## Is there a software library webpage?
 
