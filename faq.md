@@ -214,11 +214,11 @@ The Commander X16 has been developed by a team of enthusiasts who shared David's
 ## Who's been bringing the project to life?
 
 The team has included at various points:
-David Murray aka The 8-Bit Guy - Ringleader and software development
-Kevin Williams aka TexElec - Board design/Prototyping/Manufacturing
-Christian Simpson aka Perifractic - Visual design, Branding, Website creation
-Michael Steil - ROM (KERNAL, BASIC) and Emulator
-Frank van den Hoef - VERA Video chip design
-Michael Allison - Assembler environment
+* David Murray aka The 8-Bit Guy - Ringleader and software development
+* Kevin Williams aka TexElec - Board design/Prototyping/Manufacturing
+* Christian Simpson aka Perifractic - Visual design, Branding, Website creation
+* Michael Steil - ROM (KERNAL, BASIC) and Emulator
+* Frank van den Hoef - VERA Video chip design
+* Michael Allison - Assembler environment
 
 Credit must also be given to our excellent Discord and forum community, who have been testing, developing, and sharing software for the X16. Without their contributions, the computer would never have made it to production.
