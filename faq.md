@@ -116,6 +116,8 @@ The "16" part comes from the intention to use a 65C816 processor. While that pla
 ## Why VGA instead of Composite or HDMI?
 
 Licensing. While it's fairly simple to implement an HDMI device, we would have to pay license fees to build an actual HDMI output. Also, VGA is fairly easy to implement, and VGA to HDMI converters are fairly inexpensive. We will have specific models of tested and supported converters in the future. 
+ 
+A digital video board may be made available in the future. Stay tuned for more information. 
 
 ## What sort of expansions would be possible?
 
