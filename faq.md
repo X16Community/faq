@@ -11,8 +11,10 @@ The X16 will be made entirely with parts that are still readily available today,
 Three models, or "Generations" of the computer are planned under the "Commander X16" brand umbrella. All of the models will run the same software and will feature full support for keyboard, mouse, and game controllers. 
 
 * **Gen-1**: This is the Developer Edition, with 4 expansion slots, giving you flexibility for hardware and software development. (A network card will be available to match the networking capabilities of G2 and G3 systems.)
-* **Gen-2**: Is it a computer or a game console? Yes. Featuring cartridge support and a stylish case, it is a fully featured X16 computer - with a bonus! Integrated WiFi will connect to the Commander X16 BBS and offer a variety of games, applications, and development tools. 
-* **Gen-3**: The "Elite" model will feature a fully integrated single-chip design. The goal of the Gen-3 product is portability and price, potentially targeting classrooms and students. With a target price of $100, this will be a computer anyone can afford, and with access to the Commander X16 BBS, students will be able to download and share their works with other students around the world.
+* **Gen-2**: The Console Edition: Is it a computer or a game console? Yes. G2 will be smaller and less expensive, but it is still a complete Commander X16. 
+* **Gen-3**: The "Elite" model will be similar in size to a Rasbperry Pi SBC. This will be inexpensive enough to be sold to schools and colleges for STEM programs.
+
+As the G2 and G3 systems become available for sale, you will be able to buy all three systems.
 
 Please watch [Commander X16 video playlist](https://www.youtube.com/playlist?list=PLfABUWdDse7bKGFshxR0itdHBhjUj86SX) for more details.
 
@@ -81,9 +83,13 @@ Commander X16P Features & Specifications (subject to change)
 
 The first batch of dev boards have been received by David. The team is currently hand soldering development boards, and they are working on a solder dip station for rapid assembly. The first 100 boards should be delivered this year, with additional sales to follow. 
 
+Update: they are working out the kinks in the assembly process, and expect to start selling boards "soon". This spring or summer is likely.
+
+There will _not_ be a pre-order process. The 80-some boards that are part of the first batch will be first come, first served. An announcement will be made to the community when the board is available. 
+
 ## How much will it cost?
 
-Pricing has not been announced yet. Expect roughly $400 for the Pro system. We hope to release the Consoles system at a reduced proce and the Educator system for less than $100. 
+Pricing will likely be $500 for the Gen-1 system. You will get a board with 2MB RAM, mouse, keyboard, power supply, and expansion proto board. 
 
 ## Why Commodore BASIC?
 
