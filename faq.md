@@ -91,6 +91,10 @@ There will _not_ be a pre-order process. The 80-some boards that are part of the
 
 Pricing will likely be $500 for the Gen-1 system. You will get a board with 2MB RAM, mouse, keyboard, power supply, and expansion proto board. 
 
+## Where can I get it? 
+
+The Commander X16 will be sold by [Texelec](https://texelec.com/) when the time comes. Watch our social media channels on Facebook and Discord for more information.
+
 ## Why Commodore BASIC?
 
 This entire computer is meant to be a close relative of the Commodore systems. While technically Commodore BASIC is actually Microsoft BASIC, David wants it to be as similar as possible to programming on a VIC-20, C64, or Plus/4. It will run BASIC v2 with some additions. We have reached agreement with the rights holder to license it for this purpose.
