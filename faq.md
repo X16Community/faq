@@ -91,7 +91,7 @@ There will _not_ be a pre-order process. The 80-some boards that are part of the
 
 Pricing will be $500 for the first 82 developer boards (18 have already been allocated). You will get a board with 2MB RAM, mouse, keyboard, power supply, and expansion proto board. 
 
-After that, the price for the next production run will be $350. These boards will have 512K of RAM and will not contain the User Port VIA. (The socket will be on the board but will not be populated.)
+After that, the price for the next production run will be $350 for a baseline board with 512K of RAM and a single VIA. Extra memory and a second VIA for the User port will be optional and can be added at the time of purchase. 
 
 ## Where can I get it? 
 
