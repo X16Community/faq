@@ -93,7 +93,7 @@ The price for the next production run will be $350 for a baseline board with 512
 
 ## Where can I get it? 
 
-The Commander X16 can be pre-ordered from [Texelec]([https://texelec.com/](https://texelec.com/product/cx16-preorder/) and is due to be released February 29, 2024. Watch our social media channels on Facebook and Discord for more information.
+The Commander X16 can be pre-ordered from [Texelec](https://texelec.com/product/cx16-preorder/) and is due to be released February 29, 2024. Watch our social media channels on Facebook and Discord for more information.
 
 ## Why Commodore BASIC?
 
