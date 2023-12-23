@@ -119,7 +119,7 @@ Commodore already has a "C16" computer: the Commodore 16. Obviously, we don't wa
 
 The "16" part comes from the intention to use a 65C816 processor. While that plan was scrapped, due to the need for additional hardware to demux the address and data lines, the name has not changed. 
 
-## Why VGA instead of Composite or HDMI?
+## Why VGA instead of HDMI?
 
 Licensing. While it's fairly simple to implement an HDMI device, we would have to pay license fees to build an actual HDMI output. Also, VGA is fairly easy to implement, and VGA to HDMI converters are fairly inexpensive. We will have specific models of tested and supported converters in the future. 
  
