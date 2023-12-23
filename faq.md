@@ -76,6 +76,7 @@ Commander X16P Features & Specifications (subject to change)
   * 16-channel stereo Programmable Sound Generator with multiple waveforms (Pulse, Sawtooth, Triangle, Noise)
   * High quality PCM audio playback from an 4 KB FIFO buffer featuring up to 48kHz 16-bit stereo sound.
   * SecureDigital storage.
+* RTC: Microchip MCP7940N
 * Board power consumption: ~15W
 * PSU: TBC
 
