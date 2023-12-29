@@ -1,4 +1,4 @@
-<p align="center"><img src="about.png" alt="About Commander 16" /></p>
+<p align="center"><img src="about.png" alt="About Commander X16" /></p>
 
 ## What is the Commander X16?
 
