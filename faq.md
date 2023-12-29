@@ -118,75 +118,119 @@ Commodore already has a "C16" computer: the Commodore 16. Obviously, we don't wa
 
 The "16" part comes from the intention to use a 65C816 processor. While that plan was scrapped, due to the need for additional hardware to demux the address and data lines, the name has not changed. 
 
-## Why VGA instead of Composite or HDMI?
+## Why VGA instead of HDMI?
 
-Licensing. While it's fairly simple to implement an HDMI device, we would have to pay license fees to build an actual HDMI output. Also, VGA is fairly easy to implement, and VGA to HDMI converters are fairly inexpensive. We will have specific models of tested and supported converters in the future. 
- 
-A digital video board may be made available in the future. Stay tuned for more information. 
+Licensing. While it's fairly simple to implement an HDMI device, we would have
+to pay license fees to build an actual HDMI output. VGA is fairly easy to
+implement, and VGA montitors are still readily available.
+
+A digital video board is under development. More information will be made
+available as it becomes available.
+
+## Will it hook to my CRT TV, like a Commodore 64 or ZX Spectrum?
+
+In addition to VGA, the computer will have composite, and S-Video outputs. So
+you can connect to just about any NTSC compatible display. However, you'll
+want to restrict yourself to the 40-column text modes, as the 80-column modes
+are not readable in composite color.
 
 ## What sort of expansions would be possible?
 
-There will be up to 4 expansion slots, and some of the unused VIA pins may be available on the rear panel. Expansion slots will have the full address and data bus, plus up to 5 shared CS lines. Using a jumper or DIP switch on the expansion card, a user should be able to map an expansion card to any of the 5 address ranges available for I/O. Cards can also access the address range used by the ROM and RAM banks, allowing for additional memory expansion, game cartridges, or high speed storage interfaces. 
+There will be up to 4 expansion slots, and some of the unused VIA pins are
+available on pin headers. Expansion slots will have the full address and data
+bus, plus up to 5 shared IO Select lines.
+
+Expansion cards can hold ROM, RAM, sound, video, and communications interfaces.
+Some planned devices include cartridge games, a MIDI/serial interface card, a
+network interface card, and memory expansion cards with 3.5MB of additional RAM.
 
 ## What sort of joysticks will you use and why?
 
-SNES style game controllers. The SNES interface uses fewer wires and allows for more buttons on each pad. Also, joysticks have sort of fallen out of favor and people prefer gamepad controllers. 
+SNES style game controllers. The SNES interface uses fewer wires and allows for
+more buttons on each pad. 
 
 ## Will a floppy or CD-ROM drive be included?
 
-The system will store data on SDHC or SDXC memory cards. (The older SD cards with less than 2GB may not be supported.) 
+The system will store data on SDHC or SDXC memory cards. Older SD cards with 
+less than 2GB may not be supported.
 
-In addition, the Gen-1 system will include a Commodore compatible IEC port, to allow reading from a user-supplied Commodore 1541, 1571, or 1581 diskette drive. Floppy drives are no longer being manufactured, so there are no plans to include a floppy diskette or optical disk drive. 
+In addition, the Gen-1 "Developer" system will include a Commodore compatible
+IEC port, to allow reading from a user-supplied Commodore 1541, 1571, or 1581
+diskette drive.
 
 ## Will it support cassette drives?
 
-Official cassette drive support is not planned, and the KERNAL ROM does not support reading from or writing to tape.
-
-If you want to run a Commodore BASIC program you have saved on tape, you can use a Commodore computer to copy the program to diskette, or you can convert the cassette to TAP format on a PC, using various conversion tools (we can help you on the forums.)
+No. There are no plans to support a cassette drive, although it's possible that
+someone may decide to build a cassette interface on an expansion card or as an
+attachment for the User port.
 
 ## What do you need help with the most?
 
-At the moment we need software development. The emulator is now available and people can start writing their own code. You can upload your creations to the software library at this website.
+Write software for the system. The more software we have available, the more
+people will want to use the computer.
+
+Expansion and interface devices are also highly requested: network interface,
+MIDI interface, and RS-232 interfaces are at the top of the list.
 
 ## Will it be available as a kit/pre-assembled/motherboard only?
 
-We haven't decided for certain. The problem with selling it as a kit is that the design team will not have time for being end-user tech support. So, while the kit may end up being cheaper, it will also be sold without official technical support - although this website has been set up so people can still obtain support from the community and/or developers. If people assemble it and it doesn’t work, they can ask for support there. We will update the FAQ once a decision has been reached about whether to provide a kit option. As for a motherboard only option, our focus now is on releasing the computer. Once the project is launched and established, we will revisit these kind of options.
+It is unlikely, at this point. If you want a kit system, you will want to join
+Discord and talk to some of our community designers who are building their own
+versions, including kits with all the needed parts included. 
 
 ## Will a keyboard be included?
 
-Yes. A custom Perixx keyboard has been designed by Perifractic. Based on the [PERIBOARD-409](https://perixx.com/products/periboard-409-u-w-wired-mini-keyboard-75-quiet-keys-in-white). The keyboard will resemble the late model Commodore 64C keyboard, WITH PETSCII glyphs, and a white case. You can also order a [custom WASD keyboard](https://www.wasdkeyboards.com/commander16-by-the-8-bit-guy.html) with compatible PS/2 firmware and PETSCII keycaps. [PETSCII Keycaps](https://www.wasdkeyboards.com/commander16-by-the-8-bit-guy-87-key-custom-cherry-mx-keycap-set.html) are also available separately.
+Yes. A custom Perixx keyboard has been designed by Perifractic. Based on the
+[PERIBOARD-409](https://perixx.com/products/periboard-409-u-w-wired-mini-keyboard-75-quiet-keys-in-white).
+The keyboard will resemble the late model Commodore 64C keyboard, WITH PETSCII
+glyphs, and a white case. You can also order a
+[custom WASD keyboard](https://www.wasdkeyboards.com/commander16-by-the-8-bit-guy.html)
+with compatible PS/2 firmware and PETSCII keycaps.
+[PETSCII Keycaps](https://www.wasdkeyboards.com/commander16-by-the-8-bit-guy-87-key-custom-cherry-mx-keycap-set.html)
+are also available separately. The PETSCII keycaps work on an 80% or 104-key
+keyboard. (There are no PETSCII glpyhs for the numeric pad, but the numeric pad
+is now recognized by the KERNAL and produces the expected output.)
 
 ## Why PS/2 Keyboard and not USB?
 
-USB is tremendously more difficult to implement than PS/2. A good analogy is like the difference between implementing RS-232 or Ethernet. PS/2 keyboards (and mice) are still manufactured, easy to find, and inexpensive. And, since the kernel is going to handle keyboard input, there’s no reason we can’t upgrade to USB later when we have the resources for that - and it shouldn’t break compatibility.
+USB is much more complicated to implement, and it's just not a good fit for an
+8-bit system. Future systems might include a simple USB host driver, but they
+will only work with basic keyboard devices that do not have internal hubs,
+RGB lighting, and so on.
 
 ## Will a case be included?
 
-A case design is in progess. At this point, we believe the case will be an optional feature. 
+The official case is made by [Lazer 3D](https://lazer3d.com/x16-p/). The design
+is still under revision and will be modified for the second run of developer
+boards, with a cartridge port on the case's right side.
 
 ## Why not a wedge case?
 
-The case resembles a slim line, ATX PC case. It does not include a built-in keyboard for cost reasons.
-
-Not all retro comptuers used wedge cases. Consider the Amiga 1000, A2000, A2500, A3000, A4000, Apple Macintosh, Apple III, Apple IIGS, Commodore 128D, Amstrad PCW, Amstrad PC1512, Amstrad PC1640, Acorn Archimedes, Sony MSX, Atari Mega ST, Atari TT030, Coleco Adam, Kaypro series, and many more beautiful retro machines with separate keyboards.
+Cost. Anyone is free to design and manufacture a compatible keyboard case,
+however.
 
 ## What about expansion cards for each generation? 
 
-* Gen 1: 4 expansion card slots. One slot will have the ROM bank lines and be "BONK" (RAM in ROM Bank) compatible. 
-* Gen 2: Cartridge slot and all other external ports. The cartridge slot should be identical to slot 1 in the Gen-1 board. 
-* Gen 3: TBD, but "probably not."
+* Gen 1 "Developer": 4 expansion card slots, which includes a game cartridge.
+* Gen 2 "Console": One expansion/game slot.
+* Gen 3 "Elite": TBD
 
-## Why isn't a monitor included?
-
-Cost. If you don't have a spare monitor, you can pick one up for less money than it would cost for us to acquire and ship to you. Also, most enthusiasts already have a compatible monitor that can handle VGA graphics. 
+Note: all 3 systems are planned to be produced concurrently. Gen 2 and 3
+will not _replace_ Gen 1. Instead, Gen 1 is expected to be used for game
+development and testing, with Gen 2 being the primary consumer edition for
+home users. The Gen 3 system is intended to be cost-reduced, with the minimum
+number of parts, primarly meant to be used as a companion device for teaching
+6502 machine language and retro games development.
 
 ## How about a mouse?
 
-A PS/2 mouse is expected to be included. 
+A PS/2 mouse is included, or you can use any compatible PS/2 mouse.
 
 ## Will it be available in the USA, Europe, & beyond?
 
-We hope to offer international shipping from the USA. Note that the official keyboard will use the US ANSI layout, but it will be compatible with several languages and layouts. 
+We hope to offer international shipping from the USA. Note that the official
+keyboard will use the US ANSI layout, but the computer is be compatible with
+several layouts.
 
 ## Will user guides be included?
 
