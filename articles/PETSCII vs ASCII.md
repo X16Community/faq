@@ -1,7 +1,5 @@
 #PETSCII and ASCII
 
-Let's talk about PETSCII vs ASCII: 
-
 Commodore, unlike virtually every other computer maker, uses a different order of letters in its character set.
 
 On all computers, letters, numbers, symbols, and control codes ("Move that cursor left, please") are stored as numbers. Those numbers can translate to a printed character ("A"), a digit ("3"), or a command ("Move the paper up one row", or "move the print head to the start of the line").
