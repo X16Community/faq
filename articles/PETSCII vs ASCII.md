@@ -1,12 +1,10 @@
-#PETSCII and ASCII
 
-Commodore, unlike virtually every other computer maker, uses a different order of letters in its character set.
+# PETSCII vs ASCII
 
-On all computers, letters, numbers, symbols, and control codes ("Move that cursor left, please") are stored as numbers. Those numbers can translate to a printed character ("A"), a digit ("3"), or a command ("Move the paper up one row", or "move the print head to the start of the line").
 
-Eventually, the computing and communicatins industry settled on the ASCII standard, as shown in this handy little chart: https://web.alfredstate.edu/faculty/weimandn/miscellaneous/ascii/ascii_index.html
+On all computers, letters, numbers, symbols, and control codes ("Move that cursor left, please") are stored as numbers. Those numbers can translate to a printed character ("A"), a digit ("3"), or a command ("Move the paper up one row", or "move the print head to the start of the line"). Commodore opted for a special character set named PETSCII for the Commodore PET, and as a result of that legacy, we have a special and "interesting to work with" character set today.
 
-ASCII is not the only encoding method used on computers: EBCDIC, Baudout, Fieldata, ITA-2, and a few others were experimented with until ASCII became standard on microcomputers. 
+ASCII is not the only encoding method used on computers: EBCDIC, Baudout, Fieldata, ITA-2, and a few others were experimented with until ASCII became standard on microcomputers. Eventually, the computing and communicatins industry settled on the ASCII standard, as shown in this handy little chart: https://web.alfredstate.edu/faculty/weimandn/miscellaneous/ascii/ascii_index.html
 
 In ASCII, the letter "A" is stored as the number 65, "B" is 66, and so on. The lower case letters, "abc..." start at 97 and also go sequentially in ASCII. 
 
