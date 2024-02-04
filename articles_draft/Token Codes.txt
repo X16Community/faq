@@ -1,0 +1,132 @@
+# Tok64 codes and Quote Mode
+
+Have you come across a program listing in a magazine and found strange sequences like
+`{REVERSE ON}` or `{SPACE * 7}`?
+
+Those are called Tok64 codes. They were a convention started in type-in 
+magazines in the 80s, to make it easier to inform users what keys to press for
+the "magic" PETSCII control commands on Commodore computers. 
+
+The Tok64 code basically means "press this key". You'll always find these codes
+inside of "quoted strings", because they rely on the magic of "quote mode", a
+feature unique to Commodore (and now Commander) computers. 
+
+In Commodore BASIC, typing a quote puts you in quote mode, where the editor
+types a control character to the screen, rather than acting on it. So in quote
+mode, pressing the "Home" key will print an inverse 🆂 to the screen.
+
+To use quote mode, just press the quote symbol (") while entering a program. 
+Then press any control key: change the color with Control+3 or move the cursor
+up with the up arrow. You'll get inverse characters, rather than the action.
+
+Pressing the INS (Insert) key also triggers quote mode for 1 character. So you
+can use that to quickly insert a single command character.
+
+## Converting Tok64 codes
+
+So how do we make use of this in the Commander 64?
+
+There are two methods: you can simply hand-edit programs once they're on the
+Commander, or you can edit the listing if you have the file in ASCII text on
+your PC.
+
+### Hand Editing
+
+You can copy and paste code from a text editor or web page directly into the
+Commander X16 emulator. Try that now with this example program:
+
+`10 PRINT "{CLEAR}HELLO{REVERSE ON}REVERSE WORLD"`
+
+Select the text with the mouse, right-click, and select **copy**. Then switch
+to the emulator, hold Control, and press V.
+
+The line should appear on your screen, but with a large + replacing the { and
+a | replacing the }.
+
+Move the cursor to +CLEAR| and use the Delete key to remove it. Then press 
+Insert 1 time, hold Control, and press S to clear the screen. 
+
+Do the same thing to replace +Reverse On| with Control+9. 
+
+Finally, if you see something like {SPACE * 20}, that just means "press the
+space bar 20 times." You can delete the token code, press the INS key 20 times,
+then press ENTER or RETURN to lock in the line. 
+
+### Hex Codes
+
+The other way to get there is to use hex codes on your PC.
+
+Hex codes are the hexadecimal value for a PETSCII symbol. The space bar is \X20,
+for example.
+
+Let's start by getting the hex code that matches a token code. Here's a little
+program that can help you find the code for anything valid key:
+
+```
+10 GET A$:IF A$=""THEN 10
+30 PRINT "\X";HEX$(ASC(A$))
+40 GOTO 10
+```
+
+(Pressing the \ key on your keyboard will print a £ on your screen.
+This is because the PETSCII value for £ is the same as the ASCII value for \.
+So instead, press Shift+M to get the \ symbol.)
+
+RUN this and type the HOME key. You should see \X13. Press Shift+HOME. You should
+see \X93.
+
+Now you can get the hex code of any Tok64 code by simply running this program
+and pressing the key. 
+
+So let's review our example line:
+
+`10 PRINT "{CLEAR}HELLO{REVERSE ON}REVERSE WORLD"`
+
+Paste that into Notepad and alter it to look like this:
+
+`10 PRINT "\X93HELLO\X12REVERSE WORLD"`
+
+Copy and paste that into the emulator, and you should see a heart instead of
+\X93 and an inverse R instead of \X12. 
+
+RUN it.
+
+And that's all there is to that.
+
+### Example Tok64 codes
+
+| Tok64 Code   | Hex  | 
+|--------------|------|
+| {clear}      | \X93 |
+| {home}       | \X13 |        
+| {right}      | \X1D |
+| {left}       | \X9D |
+| {down}       | \X11 |
+| {up}         | \X91 | 
+| {reverse on} | \X12 |        
+| {white}      | \X05 |        
+| {purple}     |      |        
+| {yellow}     |      |        
+| {pink}       |      |        
+| {light green}|      |        
+| {f1}         |      |        
+| {f4}         |      |        
+| {f7}         |      |        
+| {reverse off}|      |
+| {red}        |      |
+| {green}      |      |
+| {orange}     |      |
+| {dark gray}  |      |
+| {light blue} |      |
+| {f2}         |      |
+| {f5}         |      |
+| {f8}         |      |
+| {black}      |      |
+| {cyan}       |      |
+| {blue}       |      |
+| {brown}      |      |
+| {gray}       |      |
+| {light gray} |      |
+| {f3}         |      |
+| {f6}         |      |
+| {space}      |      |
