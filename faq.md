@@ -217,7 +217,7 @@ more buttons on each pad.
 The system will store data on SDHC or SDXC memory cards. Older SD cards with
 less than 2GB may not be supported.
 
-In addition, Gen-1 system system includes a Commodore compatible IEC port, to
+In addition, Gen-1 includes a Commodore compatible IEC port, to
 allow reading from a user-supplied Commodore 1541, 1571, or 1581 diskette drive.
 
 ## Will it support cassette drives?
