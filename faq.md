@@ -27,17 +27,24 @@ Three models, or "Generations" of the computer are planned under the "Commander
 X16" brand umbrella. All of the models will run the same software and will
 feature full support for keyboard, mouse, and game controllers. 
 
-* **Gen-1**: This is the Developer Edition, with 4 expansion slots, giving you
-  flexibility for hardware and software development.
+* **Gen-1**: This is the "Developer" edition, with 4 expansion slots, giving you
+  flexibility for hardware and software development.  
+  The first run of 100 boards, plus a few prototypes, were numbered "DEVxxxx".
+  The second run of 1000 boards are numbered "PRxxxxx".  
+  The PR boards differ cosmetically from the DEV boards, with some minor fixes
+  integrated into the PCB, but they are functionally identical.
+
 * **Gen-2**: The Console Edition: Is it a computer or a game console? Yes. G2
-  will be smaller and less expensive, but it is still a complete Commander X16
-  albeit with more SMD parts and fewer expansion slots.
+  will be smaller and less expensive, but it is still a complete Commander X16 -
+  just slightly less hackable, with soldered-on surface mount chips and a single
+  cartridge/expansion slot.
+
 * **Gen-3**: The "Elite/Edu" model will be similar in size to a Rasbperry Pi
   SBC. This will be inexpensive enough to be sold to schools and colleges for
   STEM programs.
 
 As the G2 and G3 systems become available for sale, you will be able to buy all
-three systems.
+three systems; later systems are *not* deprecating the older ones.
 
 Please watch [Commander X16 video
 playlist](https://www.youtube.com/playlist?list=PLfABUWdDse7bKGFshxR0itdHBhjUj86SX)
@@ -58,9 +65,10 @@ Commander X16P Features & Specifications (subject to change)
 * CPU
   * WDC 65C02S @ 8 MHz
   * 40-pin DIP package
-  
+  * Compatible with 65C816 in emulation mode.
+
 * RAM
-  * 40K of "Low RAM":
+  * 40K of Main RAM:
     * As 39.75K + 256 bytes of IO space
     * 8 IO spaces of 32 bytes each; one for the VERA, one for the VIAs, one for
       the audio
@@ -71,7 +79,9 @@ Commander X16P Features & Specifications (subject to change)
   * ROM
     * 512K of Flash ROM
       * As 32 banks of 16K
-      * Expandable to 4MB of ROM or RAM via a cartridge or expansion card. 
+      * Expandable up to an additional 3.5MB of ROM or RAM via a cartridge or
+        expansion card.
+      * If installed, ROM-Bank-RAM (or "BONK RAM") is *in addition to* the 2MB of High RAM.
   * Standard Commodore Kernal
   * CMDR-BASIC
     * Microsoft BASIC 2.0 (Complete, identical to Commodore 64 and VIC-20)
@@ -113,17 +123,15 @@ Commander X16P Features & Specifications (subject to change)
 
 ## When will the X16 be released?
 
-After a run of pre-release boards, along with an initial limited official run,
-the X16 Developer Edition is now readily available on texelec.com for $349.99!
-It is expected it will be continually available though be aware it may take some
-time for your X16 to be assembled and delivered to you based on the production
-schedule.
+The X16 is now readily available on texelec.com for $349.99! We hope to keep it
+continually available, although systems, although it may take some time for your
+X16 to be assembled and delivered to you, based on the production schedule.
 
 ## How much does it cost?
 
-The Developer Edition is currently $349.99 US with 512k of RAM and a single VIA.
-Extra memory and a second VIA for the User port is optional and can be added at
-the time of purchase. 
+The Production Gen-1 system is currently $349.99 US. This comes standard  with
+512k of RAM and a single VIA. Extra memory and a second VIA for the User port is
+optional and can be added at the time of purchase. 
 
 ## Where can I get it? 
 
@@ -182,20 +190,22 @@ future VERA with a built-in HDMI-like output may be available in the future.
 
 ## Will it hook to my CRT TV, like a Commodore 64 or ZX Spectrum?
 
-In addition to VGA, the computer has composite, and S-Video outputs. So you can
+In addition to VGA, the computer has composite and S-Video outputs. So you can
 connect to just about any NTSC compatible display. However, you'll want to
 restrict yourself to the 40-column text modes, as the 80-column modes are not
 readable in composite color.
 
 ## What sort of expansions would be possible?
 
-There are 4 expansion slots on the Developer Edition and some of the unused VIA
-pins are available on pin headers. Expansion slots have the full address and
-data bus, plus up to 5 shared IO Select lines.
+There are 4 expansion slots on the Gen-1 system. Expansion slots have the full
+address and data bus, plus up to 5 shared IO Select lines.
 
 Expansion cards can hold ROM, RAM, sound, video, and communications interfaces.
 Some planned devices include cartridge games, a MIDI/serial interface card, a
 network interface card, and memory expansion cards with 3.5MB of additional RAM.
+
+VIA-1 also has some unused pins, which can be used for GPIO. The second VIA (if
+purchased) is also fully available for GPIO.
 
 ## What sort of joysticks will you use and why?
 
@@ -207,9 +217,8 @@ more buttons on each pad.
 The system will store data on SDHC or SDXC memory cards. Older SD cards with
 less than 2GB may not be supported.
 
-In addition, Developer Edition system will include a Commodore compatible IEC
-port, to allow reading from a user-supplied Commodore 1541, 1571, or 1581
-diskette drive.
+In addition, Gen-1 system system includes a Commodore compatible IEC port, to
+allow reading from a user-supplied Commodore 1541, 1571, or 1581 diskette drive.
 
 ## Will it support cassette drives?
 
@@ -257,7 +266,7 @@ The official case is made by [Lazer 3D](https://lazer3d.com/x16-p/). The design
 is still under revision and will be modified for the second run of developer
 boards, with a cartridge port on the case's right side.
 
-As the Developer Edition is mATX, most mATX cases should work. There are also
+As the Gen-1 system is mATX, most mATX cases should work. There are also
 community members working on their own cases, some of which may be available
 from them directly or available under a free license (e.g. Creative Commons) for
 folks that have the means can make their own.
@@ -319,12 +328,15 @@ software. If it had too many features (like a bunch of FPGA accelerators) it
 would be hard to use and compatibility, testability, etc. would have been far
 more difficult.
 
-Building a community around the X16 was just important as the hardware and that
-means keeping the base system static and simple was an important priority,
-noting the educational purpose of the X16 as well.
+Building a community around the X16 was just important as the hardware, and that
+means keeping the base system static and simple, so developers have a "fixed
+target" to work from and so that both users and students have something
+consistent to work with.
 
-The X16 being a spiritual successor to the Commodore PET is meant to be what it
-is. At this stage the design has been ratified with hardware in people's hands.
+The X16 is a spiritual successor to the Commodore PET, and we feel that it fills
+that role well. Unlike many "fantasy computers", this one is real, and systems
+are already in peoples' hands. 
+
 One of the benefits of the X16 is that it does have a fully capable expansion
 bus available for folks to augment and extend it in many ways. This allows for a
 lot of possibilities! Fundamentally though the architecture of the main system
@@ -336,6 +348,8 @@ options, both new and old, available!
 ## Will there be a GUI?
 
 There is no official GUI planned though there is some community work happening.
+(For those keeping track, GEOS has been removed from the ROM, excepting a few
+bits here and there kept for their utility in the bitmap graphics mode.)
 
 ## Is there an emulator?
 
