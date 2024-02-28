@@ -4,15 +4,17 @@
 
 Welcome! 
 
-The Commander X16 is The 8-Bit Guy’s dream computer, designed to evoke the same fondness and nostalgia many of us had for 8-Bit computers, while retaining closeness to the hardware from a programming perspective, unlike the Raspberry Pi and others. But more than that, it is intended not only as an educational tool but to solve some of the issues of finding an 8-Bit system to tinker with today; namely ever-increasing costs, auction site price gouging/sniping, lack of replacement parts, and unreliability of 30-year old hardware.
+The Commander X16 is The 8-Bit Guy’s dream computer, designed to evoke the same fondness and nostalgia many of us had for 8-Bit computers, while retaining closeness to the hardware from a programming perspective (unlike the Raspberry Pi and others). More than that, it is intended not only as an educational tool but to solve some of the issues of finding an 8-Bit system to tinker with today: namely ever-increasing costs, auction site price gouging/sniping, lack of replacement parts, and unreliability of 30-year old hardware.
 
-The X16 will be made entirely with parts that are still readily available today, ensuring perpetual availability without reliability issues, but in keeping with David's vision, it will house a real CPU rather than using emulation or an FPGA recreation of a processor. Running Commodore BASIC V2 (with some additions), the X16 will be inexpensive enough to allow a critical mass of users to create an expansive software ecosystem, but simple enough that a single person can understand all of the chips and components that allow that software to run.
+While many folks might have their own definition of their dream computer, this is David's.
+
+The X16 is made entirely with parts that are readily available today, ensuring perpetual availability without reliability issues, but in keeping with David's vision, it will house a real CPU rather than using emulation or an FPGA recreation of a processor. Running Commodore BASIC V2 (with some additions), the X16 will be inexpensive enough to allow a critical mass of users to create an expansive software ecosystem, but simple enough that a single person can understand all of the chips and components that allow that software to run.
 
 Three models, or "Generations" of the computer are planned under the "Commander X16" brand umbrella. All of the models will run the same software and will feature full support for keyboard, mouse, and game controllers. 
 
-* **Gen-1**: This is the Developer Edition, with 4 expansion slots, giving you flexibility for hardware and software development. (A network card will be available to match the networking capabilities of G2 and G3 systems.)
-* **Gen-2**: The Console Edition: Is it a computer or a game console? Yes. G2 will be smaller and less expensive, but it is still a complete Commander X16. 
-* **Gen-3**: The "Elite" model will be similar in size to a Rasbperry Pi SBC. This will be inexpensive enough to be sold to schools and colleges for STEM programs.
+* **Gen-1**: This is the Developer Edition, with 4 expansion slots, giving you flexibility for hardware and software development.
+* **Gen-2**: The Console Edition: Is it a computer or a game console? Yes. G2 will be smaller and less expensive, but it is still a complete Commander X16 albeit with more SMD parts and fewer expansion slots.
+* **Gen-3**: The "Elite/Edu" model will be similar in size to a Rasbperry Pi SBC. This will be inexpensive enough to be sold to schools and colleges for STEM programs.
 
 As the G2 and G3 systems become available for sale, you will be able to buy all three systems.
 
@@ -20,7 +22,7 @@ Please watch [Commander X16 video playlist](https://www.youtube.com/playlist?lis
 
 ## Who is The 8-Bit Guy
 
-David Murray, AKA "The 8-Bit Guy" runs a successful YouTube channel centered on vintage computing. He also dabbles in music, electric car culture, off-grid energy production, computer refurbishment and resale. 
+David Murray, AKA "The 8-Bit Guy" runs a successful YouTube channel centered on vintage computing. He also dabbles in music, electric car culture, off-grid energy production, computer refurbishment, and resale. 
 
 His web site is [https://www.the8bitguy.com/](https://www.the8bitguy.com/)
 
@@ -31,19 +33,19 @@ Commander X16P Features & Specifications (subject to change)
 * CPU
   * WDC 65C02S @ 8 MHz
   * 40-pin DIP package
-  * Protoype board currently running stable at 8 MHz
+  
 * RAM
   * 40K of "Low RAM":
     * As 39.75K + 256 bytes of IO space
     * 8 IO spaces of 32 bytes each; one for the VERA, one for the VIAs, one for the audio
   * 512K of "High RAM" standard:
     * As 64 banks of 8K
-  * Expandable to 1 MB, 1.5 MB, or 2 MB by adding additional RAM chips to 3 empty sockets
-    * Up to 256 banks of 8K
+    * Expandable to 1 MB, 1.5 MB, or 2 MB by adding additional RAM chips to 3 empty sockets for up to 
+    256 banks of 8k High RAM
   * ROM
     * 512K of Flash ROM
       * As 32 banks of 16K
-      * Expandable to 4MB of ROM or RAM with expansion cards. 
+      * Expandable to 4MB of ROM or RAM via a cartridge or expansion card. 
   * Standard Commodore Kernal
   * CMDR-BASIC
     * Microsoft BASIC 2.0 (Complete, identical to Commodore 64 and VIC-20)
@@ -51,7 +53,7 @@ Commander X16P Features & Specifications (subject to change)
   * Machine Language Monitor (Supermon and CODEX)
   * ROM can be flashed in place. 
 * Expansion
-  * Four expansion slots with access to CPU databus
+  * Four expansion slots with access to CPU databus (X16 Developer Edition)
   * Each slot can select from one or more of 5 addressable 32 bytes of IO space
   * User Port (Extra lines from the single VIA)
 * Input Devices
@@ -62,9 +64,9 @@ Commander X16P Features & Specifications (subject to change)
   * IEC compatible (Commodore) disk drive port
   * Internal SD card slot on VERA
 * Audio
-  * Yamaha YM2151 sound chip
-  * PCM audio on VERA
-  * PSG waveform generator on VERA (simple waveforms and frequency. No envelopes or effects.)
+  * Yamaha YM2151 sound chip (8 channels of 4-Op FM)
+  * PCM audio on VERA (Up to 48kHz, 16-bit stereo)
+  * PSG of 16 channels with 4 selectable waveforms
 * "VERA" module specifications
   * Video generator featuring:
     * Multiple output formats (VGA, NTSC Composite, NTSC S-Video, RGB video) at a fixed resolution of 640x480@60Hz
@@ -82,19 +84,19 @@ Commander X16P Features & Specifications (subject to change)
 
 ## When will the X16 be released?
 
-The first batch of dev boards have been received by David. The team is currently hand soldering development boards, and they are working on a solder dip station for rapid assembly. The first 100 boards should be delivered this year, with additional sales to follow. 
+After a run of pre-release boards, along with an initial limited official run, the X16 Developer Edition is 
+now readily available on texelec.com for $349.99! It is expected it will be continually available though 
+be aware it may take some time for your X16 to be assembled and delivered to you based on the production
+schedule.
 
-Update: they are working out the kinks in the assembly process, and expect to start selling boards "soon". This spring or summer is likely.
+## How much does it cost?
 
-There will _not_ be a pre-order process. The 80-some boards that are part of the first batch will be first come, first served. An announcement will be made to the community when the board is available. 
-
-## How much will it cost?
-
-The price for the next production run will be $350 for a baseline board with 512K of RAM and a single VIA. Extra memory and a second VIA for the User port will be optional and can be added at the time of purchase. 
+The Developer Edition is currently $349.99 US with 512k of RAM and a single VIA. Extra memory and a second VIA 
+for the User port is optional and can be added at the time of purchase. 
 
 ## Where can I get it? 
 
-The Commander X16 can be pre-ordered from [Texelec](https://texelec.com/product/cx16-preorder/) and is due to be released February 29, 2024. Watch our social media channels on Facebook and Discord for more information.
+The Commander X16 can be pre-ordered from [Texelec](https://texelec.com/product-category/commander-x16/).
 
 ## Why Commodore BASIC?
 
@@ -120,24 +122,20 @@ The "16" part comes from the intention to use a 65C816 processor. While that pla
 
 ## Why VGA instead of HDMI?
 
-Licensing. While it's fairly simple to implement an HDMI device, we would have
-to pay license fees to build an actual HDMI output. VGA is fairly easy to
-implement, and VGA montitors are still readily available.
-
-A digital video board is under development. More information will be made
-available as it becomes available.
+Licensing, simplicity, and the ability to run both LCD and CRTs on the X16.
+A future VERA with a built-in HDMI-like output may be available in the future.
 
 ## Will it hook to my CRT TV, like a Commodore 64 or ZX Spectrum?
 
-In addition to VGA, the computer will have composite, and S-Video outputs. So
+In addition to VGA, the computer has composite, and S-Video outputs. So
 you can connect to just about any NTSC compatible display. However, you'll
 want to restrict yourself to the 40-column text modes, as the 80-column modes
 are not readable in composite color.
 
 ## What sort of expansions would be possible?
 
-There will be up to 4 expansion slots, and some of the unused VIA pins are
-available on pin headers. Expansion slots will have the full address and data
+There are 4 expansion slots on the Developer Edition and some of the unused VIA pins are
+available on pin headers. Expansion slots have the full address and data
 bus, plus up to 5 shared IO Select lines.
 
 Expansion cards can hold ROM, RAM, sound, video, and communications interfaces.
@@ -154,7 +152,7 @@ more buttons on each pad.
 The system will store data on SDHC or SDXC memory cards. Older SD cards with 
 less than 2GB may not be supported.
 
-In addition, the Gen-1 "Developer" system will include a Commodore compatible
+In addition, Developer Edition system will include a Commodore compatible
 IEC port, to allow reading from a user-supplied Commodore 1541, 1571, or 1581
 diskette drive.
 
@@ -204,22 +202,27 @@ The official case is made by [Lazer 3D](https://lazer3d.com/x16-p/). The design
 is still under revision and will be modified for the second run of developer
 boards, with a cartridge port on the case's right side.
 
+As the Developer Edition is mATX, most mATX cases should work. There are also
+community members working on their own cases, some of which may be available
+from them directly or available under a free license (e.g. Creative Commons)
+for folks that have the means can make their own.
+
 ## Why not a wedge case?
 
-Cost. Anyone is free to design and manufacture a compatible keyboard case,
+Cost and configurability. Anyone is free to design and manufacture a compatible keyboard case,
 however.
 
 ## What about expansion cards for each generation? 
 
-* Gen 1 "Developer": 4 expansion card slots, which includes a game cartridge.
-* Gen 2 "Console": One expansion/game slot.
+* Gen 1 "Developer": 3 expansion card slots and one right angled cartridge slot
+* Gen 2 "Console": One expansion/cartridge slot.
 * Gen 3 "Elite": TBD
 
 Note: all 3 systems are planned to be produced concurrently. Gen 2 and 3
-will not _replace_ Gen 1. Instead, Gen 1 is expected to be used for game
-development and testing, with Gen 2 being the primary consumer edition for
-home users. The Gen 3 system is intended to be cost-reduced, with the minimum
-number of parts, primarly meant to be used as a companion device for teaching
+will not _replace_ Gen 1. Instead, Gen 1 ("Dev") is expected to be used for game
+development, testing, and power users. Gen 2 ("Console") will be the primary consumer edition for
+home users. Gen 3 ("Elite/Edu") system is intended to be cost-reduced, with the minimum
+number of parts, primarily meant to be used as a companion device for teaching
 6502 machine language and retro games development.
 
 ## How about a mouse?
@@ -243,9 +246,32 @@ Most of its capabilities are on par with or inferior to our custom FPGA.
 There are issues when putting it on the system bus related to CPU read attempt speed call and answer
 The Propeller costs the same as if not more than the faster FPGA
 
+## Seriously, if the X16 doesn't have X, I don't want it.
+
+At this stage the design has been ratified with hardware in people's hands and
+changes to the base hardware are very unlikely.
+
+Engineering is ultimately an exercise in compromise. To meet the goals of the
+project at a cost target, not everything and the kitchen sink could be included.
+Likewise, the X16 represents a stable platform with which to write amazing
+software. If it had too many features (like a bunch of FPGA accelerators) it
+would be harder to use and compatibility, testability, etc. would have been more
+difficult.
+
+Building a community around the X16 is just important as the hardware and given
+the educational goals of the X16, this meant the base system is static and
+simple.
+
+That said, one of the benefits of the X16 is that it does have a fully capable
+expansion bus available for folks to augment and extend it in many ways. This
+allows for a lot of possibilities! Even CPU accelerator cards are possible!
+
+If the X16 isn't your cup of tea, that's totally ok! There are plenty of retro
+options, both new and old, available and we hope you find one that suits you!
+
 ## Will there be a GUI?
 
-There is no official GUI planned. Support routines for GEOS are present in ROM, but at this point, no one has a working GEOS desktop or application suite. 
+There is no official GUI planned though there is some community work happening.
 
 ## Is there an emulator?
 
@@ -263,21 +289,33 @@ X16 or CX16 are both accepted. "CX16" is short for "Commander X16", in the same 
 
 There are no immediate plans to open source the computer. 
 
-The KERNAL code is not available as open source, nor will it be, due to licensing issues. Commodore's KERNAL is owned by Cloanto corp, and this is not likely to change. So *you may not use the Commander X16 ROM without purchasing a Commander X16 Microcomputer.*
+The KERNAL code is not available as open source, nor will it be, due to
+licensing issues. Commodore's KERNAL is owned by Cloanto corp, and this is not
+likely to change. So *you may not use the Commander X16 ROM without purchasing a
+Commander X16 Microcomputer.*
 
-There are discussions of creating a fully open-source KERNAL for the Gen-2 gaming system. This discussion is ongoing, and we will update this FAQ if this changes. 
-
-## Will there be a beta program? 
-
-As of February 2023, The first 100 developer systems (aka Gen-1) are being assembled. These users will be the core beta test group. 
+There are discussions of creating a fully open-source KERNAL for the Gen-2
+gaming system. This discussion is ongoing, and we will update this FAQ if this
+changes. 
 
 ## Is this a commercial or not-for-profit venture?
 
-The Commander X16 has been developed by a team of enthusiasts who shared David's vision to create a reliable, low cost, modern retro computer for the benefit of the retro community. The team is committed to launching the Commander X16 at the lowest price possible while still ensuring that the team will be reimbursed for out of pocket expenses incurred during the 2+ year development process (such as parts, prototypes, shipping, web hosting, etc.) David and the team are not looking to profit from the project and instead seek to strike a balance between continuing to produce the Commander X16 at an affordable price while also meeting the ongoing costs associated with continued development, manufacture, and infrastructure (e.g., website hosting, legal assistance, prototyping, deposits on parts, and so on).
+The Commander X16 has been developed by a team of enthusiasts who shared David's
+vision to create a reliable, low cost, modern retro computer for the benefit of
+the retro community. The team is committed to launching the Commander X16 at the
+lowest price possible while still ensuring that the team will be reimbursed for
+out of pocket expenses incurred during the 2+ year development process (such as
+parts, prototypes, shipping, web hosting, etc.) David and the team are not
+looking to profit from the project and instead seek to strike a balance between
+continuing to produce the Commander X16 at an affordable price while also
+meeting the ongoing costs associated with continued development, manufacture,
+and infrastructure (e.g., website hosting, legal assistance, prototyping,
+deposits on parts, and so on).
 
 ## Who's been bringing the project to life?
 
-The team has included at various points:
+The core team has included at various points:
+
 * David Murray aka The 8-Bit Guy - Ringleader and software development
 * Kevin Williams aka TexElec - Board design/Prototyping/Manufacturing
 * Christian Simpson aka Perifractic - Visual design, Branding, Website creation
