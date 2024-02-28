@@ -246,6 +246,8 @@ Most of its capabilities are on par with or inferior to our custom FPGA.
 There are issues when putting it on the system bus related to CPU read attempt speed call and answer
 The Propeller costs the same as if not more than the faster FPGA
 
+<!-- tomxp411: I like the thought, but it doesn't feel right in a FAQ.
+
 ## Seriously, if the X16 doesn't have X, I don't want it.
 
 At this stage the design has been ratified with hardware in people's hands and
@@ -269,9 +271,13 @@ allows for a lot of possibilities! Even CPU accelerator cards are possible!
 If the X16 isn't your cup of tea, that's totally ok! There are plenty of retro
 options, both new and old, available and we hope you find one that suits you!
 
+--> 
+
 ## Will there be a GUI?
 
-There is no official GUI planned though there is some community work happening.
+No. The main interface is good old BASIC, with some text based utilities
+accessible through BASIC commands or the main menu. (Which you can get to
+with the MENU command in BASIC.)
 
 ## Is there an emulator?
 
