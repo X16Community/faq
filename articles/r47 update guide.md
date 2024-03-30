@@ -1,0 +1,63 @@
+# R47 Update Guide
+
+## Acquiring
+
+Start by obtaining all the update materials. You will need the ROM image, the 
+SMC firmware, the VERA bitstream.
+
+* ROM: https://github.com/X16Community/x16-rom/releases/tag/r47
+  * Download `x16-rom-R47.zip`
+* SMC: https://github.com/X16Community/x16-smc/releases
+  * Download `SMC-47.0.0.BIN`
+* VERA: https://github.com/X16Community/vera-module/releases/tag/v47.0.2
+  * Download `FLASHVERA.PRG` and `VERA_47.0.2.BIN`
+  
+You will also need Sven's X16 updater. This should have shipped on your SD card,
+or you can download the current version from [here](https://github.com/FlightControl-User/x16-flash/releases/tag/r3.0.0)
+
+* Download CX16-UPDATE-R3.0.0.PRG
+
+## Installing
+
+1. Power off the X16.
+2. Remove your SD card from the X16 and insert it in the SD card slot of a PC or
+   Mac.
+3. Create a new directory on your SD Card named UPDATE (all caps) and copy all
+   of the files into that directory.
+4. Rename the SMC file to `SMC.BIN`
+5. Rename the VERA file to `VERA.BIN`
+6. Rename the update program to `UPDATE.PRG`
+7. Safely eject the card from your computer and re-install it in the X16.
+
+## Updating
+
+1. Look for the **J1** Write Protect jumper on your motherboard. The jumper cap
+   must be _installed_ to enable writing to the system flash ROMs. 
+   * This may be labeled "Remove J1 to write protect system ROM".
+2. Start your X16 and type `DOS"CD:/UPDATE"` and press RETURN
+3. type `LOAD UPDATE.PRG` and press RETURN
+4. Type `RUN` and press RETURN
+5. You'll get some warning screens about compatibility. These are normal.
+6. The ROM will update first. Once that's done, you'll be told to close the JP1
+   pin on VERA. Don't actually close the pin until after the program has read 
+   VERA.BIN (the bottom portion of the screen will be filled with dots) and the
+   middle portion says `CLOSE the JP1 jumper header on the VERA board!`
+7. Place the jumper cap on JP1 on the VERA board and press the SPACE bar. 
+   * This disables the SD card, so you'll need to remove the cap once the
+     VERA flash is complete.
+8. The next step will be to update the SMC. When the program asks, hold the
+   power button down and tap the RESET button. You must do so before the timer
+   runs out. 
+9. You will then see the same SMC update progress.
+10. If the SMC was updated, the power button on the front panel won't actually
+    turn off the computer, because the SMC runs on the +5V Standby rail. So you
+    need to remove the power cord from your X16 to fully power it off, then plug
+    it back in. 
+11. After restarting your X16, confirm the version of the ROM, VERA, and SMC
+    firmware by typing `HELP` and pressing RETURN.
+    * After the full R47 release, the version numbers will be:
+    * COMMANDER X16 ROM RELEASE R47
+    * VERA: V47.0.2
+    * SMC: 47.0.0
+12. At this point, if you have purchased a 65C816 processor, you can power the
+    system down (unplug it) and install the new CPU.
