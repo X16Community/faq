@@ -19,6 +19,11 @@ SMC firmware, the VERA bitstream.
 * Updater: https://github.com/FlightControl-User/x16-flash/releases/tag/r3.0.0
   * Download `CX16-UPDATE-R3.0.0.PRG`
 
+The SMC update is optional. We recommend _not_ updatng the SMC at this time, if
+you are not having problems with your PS/2 keyboard or mouse. To skip the SMC
+update, simply do not include `SMC.BIN` in the steps below. The update tool will
+skip the SMC update if the file is not present.
+
 ## Installing
 
 1. Power off the X16.
@@ -32,7 +37,7 @@ SMC firmware, the VERA bitstream.
 7. Your UPDATE folder should have these files on it:
     ```
     ROM.BIN
-    SMC.BIN
+    SMC.BIN (optional)
     VERA.BIN
     UPDATE.PRG
     ```
@@ -64,8 +69,11 @@ SMC firmware, the VERA bitstream.
 9. You will then see the same SMC update progress.
 10. If the SMC was updated, the power button on the front panel won't actually
     turn off the computer, because the SMC runs on the +5V Standby rail. So you
-    need to remove the power cord from your X16 to fully power it off, then plug
-    it back in. 
+    need to unplug your X16 from the wall to de-power the SMC, then plug it back
+    in.
+    * **DO NOT** unplug the 12V barrel connector to de-power the Pico PSU (if
+      you are using one.) Unplug the 120/240V to 12V adapter from the wall,
+      instead.
 11. After restarting your X16, confirm the version of the ROM, VERA, and SMC
     firmware by typing `HELP` and pressing RETURN.
     * After the full R47 release, the version numbers will be:
