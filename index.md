@@ -5,3 +5,5 @@
 * [Articles and Tips](articles/index.md)
 * [Community Forums](https://cx16forum.com)
 * [The 8-Bit Guy](https://www.the8bitguy.com/)
+
+This page is on Github.io at https://x16community.github.io/faq/
