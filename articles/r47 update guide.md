@@ -15,9 +15,7 @@ SMC firmware, the VERA bitstream.
   * Download `SMC-47.0.0.BIN`
 * VERA: https://github.com/X16Community/vera-module/releases/tag/v47.0.2
   * Download `FLASHVERA.PRG` and `VERA_47.0.2.BIN`
-  
-You will also need Sven's X16 updater. This should have shipped on your SD card,
-or you can download the current version from [here](https://github.com/FlightControl-User/x16-flash/releases/tag/r3.0.0)
+* Updater: https://github.com/FlightControl-User/x16-flash/releases/tag/r3.0.0
 
 * Download CX16-UPDATE-R3.0.0.PRG
 
