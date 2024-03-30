@@ -5,6 +5,10 @@
 Start by obtaining all the update materials. You will need the ROM image, the 
 SMC firmware, the VERA bitstream.
 
+* Emulator (optional): https://github.com/X16Community/x16-emulator/releases/tag/r47
+  * The emulator is not required in order to update your X16, but you'll want the
+    latest emulator, anyway, since it has the same changes as the ROM, SMC, and VERA
+    that are on the official hardware.
 * ROM: https://github.com/X16Community/x16-rom/releases/tag/r47
   * Download `x16-rom-R47.zip`
 * SMC: https://github.com/X16Community/x16-smc/releases
