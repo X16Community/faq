@@ -19,7 +19,7 @@ SMC firmware, the VERA bitstream.
 * Updater: https://github.com/FlightControl-User/x16-flash/releases/tag/r3.0.0
   * Download `CX16-UPDATE-R3.0.0.PRG`
 
-The SMC update is optional. We recommend _not_ updatng the SMC at this time, if
+The SMC update is optional. We recommend _not_ updating the SMC at this time, if
 you are not having problems with your PS/2 keyboard or mouse. To skip the SMC
 update, simply do not include `SMC.BIN` in the steps below. The update tool will
 skip the SMC update if the file is not present.
