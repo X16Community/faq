@@ -11,6 +11,7 @@ SMC firmware, the VERA bitstream.
     that are on the official hardware.
 * ROM: https://github.com/X16Community/x16-rom/releases/tag/r47
   * Download `x16-rom-R47.zip`
+  * Extract rom.bin from the zip file.  Save it as `ROM.BIN` all CAPS.
 * SMC: https://github.com/X16Community/x16-smc/releases
   * Download `SMC-47.0.0.BIN`
 * VERA: https://github.com/X16Community/vera-module/releases/tag/v47.0.2
@@ -28,7 +29,14 @@ SMC firmware, the VERA bitstream.
 4. Rename the SMC file to `SMC.BIN`
 5. Rename the VERA file to `VERA.BIN`
 6. Rename the update program to `UPDATE.PRG`
-7. Safely eject the card from your computer and re-install it in the X16.
+7. Your UPDATE folder should have these files on it:
+    ```
+    ROM.BIN
+    SMC.BIN
+    VERA.BIN
+    UPDATE.PRG
+    ```
+8. Safely eject the card from your computer and re-install it in the X16.
 
 ## Updating
 
@@ -39,6 +47,10 @@ SMC firmware, the VERA bitstream.
 3. type `LOAD UPDATE.PRG` and press RETURN
 4. Type `RUN` and press RETURN
 5. You'll get some warning screens about compatibility. These are normal.
+    * You will need to press `SPACE` and `Y` quite a few times before you get to
+      the point where flashing will begin.
+    * The Updater application does provide quite detailed instructions.  Read
+      everything carefully.
 6. The ROM will update first. Once that's done, you'll be told to close the JP1
    pin on VERA. Don't actually close the pin until after the program has read 
    VERA.BIN (the bottom portion of the screen will be filled with dots) and the
