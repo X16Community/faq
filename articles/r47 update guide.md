@@ -5,24 +5,29 @@
 Start by obtaining all the update materials. You will need the ROM image, the 
 SMC firmware, the VERA bitstream.
 
-* Emulator (optional): https://github.com/X16Community/x16-emulator/releases/tag/r47
+* Emulator (optional): [R47 Release](https://github.com/X16Community/x16-emulator/releases/tag/r47)
   * The emulator is not required in order to update your X16, but you'll want the
     latest emulator, anyway, since it has the same changes as the ROM, SMC, and VERA
     that are on the official hardware.
-* ROM: https://github.com/X16Community/x16-rom/releases/tag/r47
+* ROM: [R47 Release](https://github.com/X16Community/x16-rom/releases/tag/r47)
   * Download `x16-rom-R47.zip`
   * Extract rom.bin from the zip file.  Save it as `ROM.BIN` all CAPS.
-* SMC: https://github.com/X16Community/x16-smc/releases
-  * Download `SMC-47.0.0.BIN`
-* VERA: https://github.com/X16Community/vera-module/releases/tag/v47.0.2
+* VERA: [R47 Release](https://github.com/X16Community/vera-module/releases/tag/v47.0.2)
   * Download `FLASHVERA.PRG` and `VERA_47.0.2.BIN`
-* Updater: https://github.com/FlightControl-User/x16-flash/releases/tag/r3.0.0
+* SMC: (see note below) https://github.com/X16Community/x16-smc/releases
+  * Download `SMC-47.0.0.BIN`
+* Updater: [V3 Release](https://github.com/FlightControl-User/x16-flash/releases/tag/r3.0.0)
   * Download `CX16-UPDATE-R3.0.0.PRG`
 
 The SMC update is optional. We recommend _not_ updating the SMC at this time, if
 you are not having problems with your PS/2 keyboard or mouse. To skip the SMC
 update, simply do not include `SMC.BIN` in the steps below. The update tool will
 skip the SMC update if the file is not present.
+
+We recommend applying the update to a spare [ATTINY Microcontroller](https://www.mouser.com/ProductDetail/Microchip-Technology/ATTINY861A-PU?qs=LHmEVA8xxfaSeKN6IG2jWA%3D%3D)
+and swapping that out. We are working on a manual update process. In the meantime,
+see [This Discord channel](https://discord.com/channels/547559626024157184/1224465757786865694)
+for the information we have collected.
 
 ## Installing
 
