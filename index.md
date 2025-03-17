@@ -7,8 +7,8 @@
 * [Community Forums](https://cx16forum.com)
 * [The 8-Bit Guy](https://www.the8bitguy.com/)
 
-This page is on Github.io at https://x16community.github.io/faq/
+This page is on Github.io at [https://x16community.github.io/faq/](https://x16community.github.io/faq/)
 
-Contribute on GitHub at https://github.com/X16Community/faq
+Contribute on GitHub at [https://github.com/X16Community/faq](https://github.com/X16Community/faq)
 
 This content is licensed Creative Commons SA-NC.

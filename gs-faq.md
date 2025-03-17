@@ -120,3 +120,5 @@ is what we are planning for now:
 * $FF – System Check   - Used to determine if the system is GS, or if you're
   looking at the YM2151 
 
+<p align="center"><img src="images/Gen1_2_side_by_side.png" alt="Dev board and GS board side by side" /></p>
+<p align="center"><img src="images/gen2.png" alt="Dev board and GS board side by side" /></p>
