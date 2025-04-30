@@ -1,22 +1,22 @@
-# R47 Update Guide
+# Commander X16 Update Guide
 
 ## Acquiring
 
 Start by obtaining all the update materials. You will need the ROM image, the 
 SMC firmware, the VERA bitstream.
 
-* Emulator (optional): [R47 Release](https://github.com/X16Community/x16-emulator/releases/tag/r47)
+* Emulator (optional): [Emulator Releases](https://github.com/X16Community/x16-emulator/releases/)
   * The emulator is not required in order to update your X16, but you'll want the
     latest emulator, anyway, since it has the same changes as the ROM, SMC, and VERA
     that are on the official hardware.
-* ROM: [R47 Release](https://github.com/X16Community/x16-rom/releases/tag/r47)
-  * Download `x16-rom-R47.zip`
+* ROM: [ROM Releases](https://github.com/X16Community/x16-rom/releases/)
+  * Download `x16-rom-Rxx.zip`, where `xx` is the latest version number.
   * Extract rom.bin from the zip file.  Save it as `ROM.BIN` all CAPS.
-* VERA: [R47 Release](https://github.com/X16Community/vera-module/releases/tag/v47.0.2)
+* VERA: [VERA Releases](https://github.com/X16Community/vera-module/releases/)
   * Download `FLASHVERA.PRG` and `VERA_47.0.2.BIN`
 * SMC: (see note below) https://github.com/X16Community/x16-smc/releases
   * Download `SMC-47.0.0.BIN`
-* Updater: [V3 Release](https://github.com/FlightControl-User/x16-flash/releases/tag/r3.0.0)
+* Updater: [V3 Release](https://github.com/FlightControl-User/x16-flash/releases/)
   * Download `CX16-UPDATE-R3.0.0.PRG`
 
 The SMC update is optional. We recommend _not_ updating the SMC at this time, if
