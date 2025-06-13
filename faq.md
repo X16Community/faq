@@ -179,7 +179,7 @@ versions, including kits with all the needed parts included.
 ## Will a keyboard be included?
 
 Yes. A custom Perixx keyboard has been designed by Perifractic, based on the
-[PERIBOARD-409](https://perixx.com/products/periboard-409-u-w-wired-mini-keyboard-75-quiet-keys-in-white).
+[PERIBOARD-409](https://perixx.com/products/periboard-409?variant=46154180722947).
 The keyboard will resemble the late model Commodore 64C keyboard, with PETSCII
 glyphs and a white case.
 
