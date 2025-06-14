@@ -178,16 +178,10 @@ versions, including kits with all the needed parts included.
 
 ## Will a keyboard be included?
 
-Yes. A custom Perixx keyboard has been designed by Perifractic. Based on the
-[PERIBOARD-409](https://perixx.com/products/periboard-409-u-w-wired-mini-keyboard-75-quiet-keys-in-white).
-The keyboard will resemble the late model Commodore 64C keyboard, WITH PETSCII
-glyphs, and a white case. You can also order a
-[custom WASD keyboard](https://www.wasdkeyboards.com/commander16-by-the-8-bit-guy.html)
-with compatible PS/2 firmware and PETSCII keycaps.
-[PETSCII Keycaps](https://www.wasdkeyboards.com/commander16-by-the-8-bit-guy-87-key-custom-cherry-mx-keycap-set.html)
-are also available separately. The PETSCII keycaps work on an 80% or 104-key
-keyboard. (There are no PETSCII glpyhs for the numeric pad, but the numeric pad
-is now recognized by the KERNAL and produces the expected output.)
+Yes. A custom Perixx keyboard has been designed by Perifractic, based on the
+[PERIBOARD-409](https://perixx.com/products/periboard-409?variant=46154180624643).
+The keyboard will resemble the late model Commodore 64C keyboard, with PETSCII
+glyphs and a white case.
 
 ## Why PS/2 Keyboard and not USB?
 
